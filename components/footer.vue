@@ -60,7 +60,7 @@ export default {};
 <style lang="less" scoped>
 footer {
   background-color: #333;
-  height: 329px;
+ 
 }
 .footer-content {
   width: 1000px;
@@ -68,6 +68,7 @@ footer {
   color: #cccccc;
   font-size: 12px;
   padding-top: 30px;
+   height: 329px;
   dt {
     font-size: 16px;
     margin-bottom: 10px;
