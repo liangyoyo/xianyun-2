@@ -103,7 +103,7 @@ export default {
   min-width: 1000px;
   margin: 0 auto;
   position: relative;
-   //用来修改第三方组件的class
+
   /deep/ .el-carousel__container {
     height: 700px;
   }
