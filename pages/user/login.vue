@@ -21,7 +21,7 @@
       </div>
     </el-row>
   </div>
-</template>
+</template>  
 
 <script>
 import LoginForm from "@/components/user/loginForm"

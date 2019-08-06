@@ -201,11 +201,20 @@ export default {
       });
       // 不存在路线，即不需要往下执行
       if (!valid) return;
+      
       this.$router.push({
         path: "/air/flights",
         // get请求 url.parse：将一个url地址转换成一个urlObject 第二个参数如果写成true则代表将query解析成一个对象
         query: this.form
       });
+      // 获取出本地Vuex的数据
+      const arr=[...this.$store.state.air.history]
+      // 新的记录添加到第一个
+      arr.unshift(this.form)
+      if(arr.length>5){
+        arr.length=5
+      }
+      this.$store.commit('air/setHistory',arr)
     }
   },
   mounted() {}
